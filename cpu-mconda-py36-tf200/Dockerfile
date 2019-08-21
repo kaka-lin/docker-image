@@ -1,5 +1,8 @@
-FROM nvidia/cuda:8.0-cudnn6-devel-ubuntu16.04
+FROM library/ubuntu:18.04
 LABEL maintainer="kaka <vn503024@gmail.com>"
+
+# tzdata issue
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Install basic dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -25,9 +28,10 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh &
 
 ENV PATH=/usr/local/anaconda3/bin:$PATH
 
-# Install Pytorch (cuda8.0)
-RUN conda install pytorch torchvision cuda80 -c pytorch && \
-    pip install matplotlib opencv-python click
+# Install Tensorflow 2.0
+RUN pip install tensorflow==2.0.0-beta1 \
+    matplotlib opencv-python numpy==1.16.4 \
+    jupyter
 
 # Set timezone
 RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
@@ -35,3 +39,6 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
 # Set locale
 ENV LANG C.UTF-8 
 ENV LC_ALL C.UTF-8
+
+# Workdir: /root
+WORKDIR /root

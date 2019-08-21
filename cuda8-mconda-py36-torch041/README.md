@@ -1,17 +1,17 @@
 # kakalin/kimage
 
-## Env
+## Environments
 
 - Ubunut: 16.04
 - CUDA: 8.0
 - Miniconda: latest
-- python: 3.6
-- pytorch: 0.4.1
+- Python: 3.6
+- Pytorch: 0.4.1
 
 ## Build
 
 ```bash
-$ docker built -t kakalin/kimage:cuda8-mconda-py36-torch041 .
+$ docker build --rm -t kakalin/kimage:cuda8-mconda-py36-torch041 .
 ```
 
 ## Run
