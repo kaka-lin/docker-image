@@ -4,7 +4,7 @@ This repository is for build a Docker image.
 
 ## Tags available
 
-Check the [DockerHub](https://cloud.docker.com/u/kakalin/repository/docker/kakalin/kimage)
+Check the [DockerHub](https://hub.docker.com/r/kakalin/kimage)
 
 ## Version 
 
