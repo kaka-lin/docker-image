@@ -6,7 +6,7 @@
 - CUDA: None
 - Miniconda: latest
 - Python: 3.6
-- Tensorflow: 2.0
+- Tensorflow: 2.0.0
 - Jupyter: latest
 
 ## Build
