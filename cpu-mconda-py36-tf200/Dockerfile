@@ -29,9 +29,9 @@ RUN wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh &
 ENV PATH=/usr/local/anaconda3/bin:$PATH
 
 # Install Tensorflow 2.0
-RUN pip install tensorflow==2.0.0-beta1 \
+RUN pip install tensorflow==2.0.0 \
     matplotlib opencv-python numpy==1.16.4 \
-    jupyter
+    jupyter pillow
 
 # Set timezone
 RUN ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
