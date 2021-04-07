@@ -12,7 +12,7 @@
 ## Build
 
 ```bash
-$ docker build --rm -t kakalin/kimage:cpu-mconda-py36-tf200 .
+$ docker build --rm -t kakalin/kimage:cpu-tf2.0.0-devel .
 ```
 
 ## Running
@@ -20,13 +20,13 @@ $ docker build --rm -t kakalin/kimage:cpu-mconda-py36-tf200 .
 1. Common
 
 ```bash
-$ docker run -it --rm kakalin/kimage:cpu-mconda-py36-tf200
+$ docker run -it --rm kakalin/kimage:cpu-tf2.0.0-devel
 ```
 
 2. Can run Jupyter
 
 ```bash
-$ docker run -it -p 8888:8888 --rm kakalin/kimage:cpu-mconda-py36-tf200
+$ docker run -it -p 8888:8888 --rm kakalin/kimage:cpu-tf2.0.0-devel
 ```
 * In container
 

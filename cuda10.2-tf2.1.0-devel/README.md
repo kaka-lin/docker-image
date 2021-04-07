@@ -12,7 +12,7 @@
 ## Build
 
 ```bash
-$ docker build --rm -t kakalin/kimage:cuda10.2-py36-tf2.1.0 .
+$ docker build --rm -t kakalin/kimage:cuda10.2-tf2.1.0-devel .
 ```
 
 ## Running
@@ -21,13 +21,13 @@ $ docker build --rm -t kakalin/kimage:cuda10.2-py36-tf2.1.0 .
 
 ```bash
 # Start a GPU enabled container on all GPUs
-$ docker run -it --rm --gpus all kakalin/kimage:cuda10.2-py36-tf2.1.0
+$ docker run -it --rm --gpus all kakalin/kimage:cuda10.2-tf2.1.0-devel
 
 # Start a GPU enabled container on two GPUs
-$ docker run -it --rm --gpus 2 kakalin/kimage:cuda10.2-py36-tf2.1.0
+$ docker run -it --rm --gpus 2 kakalin/kimage:cuda10.2-tf2.1.0-devel
 
 # Starting a GPU enabled container on specific GPUs
-$ docker run -it --rm --gpus '"device=1"' kakalin/kimage:cuda10.2-py36-tf2.1.0
+$ docker run -it --rm --gpus '"device=1"' kakalin/kimage:cuda10.2-tf2.1.0-devel
 ```
 
 2. Mount directory and Publish port to run jupyter
@@ -36,7 +36,7 @@ $ docker run -it --rm --gpus '"device=1"' kakalin/kimage:cuda10.2-py36-tf2.1.0
 $ docker run -it --rm --gpus all \
 -v <local directory>:<Container directory> \
 -p 8888:8888 \
-kakalin/kimage:cuda10.2-py36-tf2.1.0
+kakalin/kimage:cuda10.2-tf2.1.0-devel
 ```
 
 * In container

@@ -11,11 +11,11 @@
 ## Build
 
 ```bash
-$ docker build --rm -t kakalin/kimage:cuda8-mconda-py36-torch041 .
+$ docker build --rm -t kakalin/kimage:cuda8-torch0.4.1-devel .
 ```
 
 ## Run
 
 ```bash
-$ docker run -it --runtime=nvidia --rm kakalin/kimage:cuda8-mconda-py36-torch041
+$ docker run -it --runtime=nvidia --rm kakalin/kimage:cuda8-torch0.4.1-devel
 ```
