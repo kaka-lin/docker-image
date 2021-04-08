@@ -3,7 +3,7 @@ scipy
 pandas
 matplotlib
 seaborn
-opencv-python-headless-4.5.1.48
+opencv-python-headless
 pillow
 sklearn
 Click
