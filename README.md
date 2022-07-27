@@ -14,6 +14,7 @@ Check the [DockerHub](https://hub.docker.com/r/kakalin/kimage)
 |  :------------:  |  :-----:  |  :----:  |  :--------:  |  :-----:  |  :--------:  |
 |  Ubuntu<br>18.04  |  CPU  |  3.6  |  Tensorflow 2.0.0  |  Yes  |  [Link](https://github.com/kaka-lin/docker-image/tree/master/cpu-tf2.0.0-devel)  |
 |  Ubuntu<br>18.04  |  CUDA 10.2<br>cuDNN 7  |  3.6  |  Tensorflow 2.1.0  |  Yes  |  [Link](https://github.com/kaka-lin/docker-image/tree/master/cuda10.2-tf2.1.0-devel)  |
+|  Ubuntu<br>18.04  |  CUDA 11.6<br>cuDNN 8  |  3.8  |  Tensorflow 2.9.1  |  Yes  |  [Link](https://github.com/kaka-lin/docker-image/tree/master/cuda11.6-tf2.9.1-devel)  |
 
 
 ### Pytorch
