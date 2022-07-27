@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+opencv-python-headless
+pillow
+sklearn
+Click
+tqdm
