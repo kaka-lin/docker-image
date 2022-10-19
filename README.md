@@ -30,3 +30,8 @@ Check the [DockerHub](https://hub.docker.com/repository/docker/kakalin/kimage)
 |  OS<br>Platform  |  CPU/GPU  |  Python  |  Frameworks  |  Jupyter  |  Dockerfile  |
 |  :------------:  |  :-----:  |  :----:  |  :--------:  |  :-----:  |  :--------:  |
 |  Ubuntu<br>18.04  |  CUDA 11.6,<br>cuDNN 8  |  3.8  |  ONNX 1.12.0  |  No  |  [Link](https://github.com/kaka-lin/docker-image/tree/master/onnxrt-1.12.0-runtime)  |
+
+### Others
+
+- Qt: please see [here](https://github.com/kaka-lin/qt-template/tree/master/docker)
+- PCL: please see [here](https://github.com/kaka-lin/autonomous-driving-notes/tree/master/PCL/00_installation)
