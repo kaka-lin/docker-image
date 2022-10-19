@@ -1,6 +1,9 @@
 FROM pytorch/pytorch:1.8.0-cuda11.1-cudnn8-devel
 LABEL maintainer="kaka <vn503024@gmail.com>"
 
+# Solve Error: NO_PUBKEY A4B469963BF863CC
+RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub
+
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     tzdata locales sudo pkg-config

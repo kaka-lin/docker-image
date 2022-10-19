@@ -11,7 +11,8 @@
 ## Build
 
 ```bash
-$ docker build --rm -t kakalin/kimage:cuda11.1-torch1.8-devel .
+# docker build --rm -t kakalin/kimage:cuda11.1-torch1.8-devel .
+$ build.sh
 ```
 
 ## Run
@@ -19,7 +20,6 @@ $ docker build --rm -t kakalin/kimage:cuda11.1-torch1.8-devel .
 ```bash
 $ docker run -it --runtime=nvidia --rm kakalin/kimage:cuda11.1-torch1.8-devel
 ```
-
 
 ## Validate your installation
 
@@ -36,5 +36,5 @@ $ nvcc --version
 ### 2. cuDNN Version
 
 ```bash
-cat /usr/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+$ cat /usr/include/cudnn_version.h  | grep CUDNN_MAJOR -A 2
 ```
