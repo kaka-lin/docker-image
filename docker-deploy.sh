@@ -15,7 +15,7 @@ fi
 #echo ">>> Base Dockerfile: ${DOCKEEFILE_ARRAY[0]}"
 for base_docker in $(find . -name 'cuda*'); do
     if [[ -n $(find $base_docker -name 'Dockerfile') && 
-          -n $(find $base_docker -name 'build*') ]]; then
+          -n $(find $base_docker -name 'deploy*') ]]; then
         BASE_DOCKERFILE=${base_docker[@]:2}
         DOCKEEFILE_ARRAY+=("$BASE_DOCKERFILE")
         echo ">>> Base Dockerfile: $BASE_DOCKERFILE"
@@ -23,18 +23,18 @@ for base_docker in $(find . -name 'cuda*'); do
 done
 
 # Append the rest Dockerfile
-for docker_file in $(find . -name 'build*'); do
-    DOCKERFILE=${docker_file[@]:2:-9}
+for docker_file in $(find . -name 'deploy*'); do
+    DOCKERFILE=${docker_file[@]:2:-10}
     if [[ "${DOCKEEFILE_ARRAY[*]}" != *"$DOCKERFILE"* ]]; then
         DOCKEEFILE_ARRAY+=("$DOCKERFILE")
         echo ">>> Dockerfile: $DOCKERFILE"
     fi
 done
 
-# Starting docker build
+# Starting docker push
 for docker_folder in "${DOCKEEFILE_ARRAY[@]}"; do
     FOLDER_NAME=$docker_folder
-    DOCKER_BUILD="$docker_folder/build.sh"
-    echo ">>> Start build $FOLDER_NAME"
-    $DOCKER_BUILD $MACHINE $FOLDER_NAME
+    DOCKER_DEPLOY="$docker_folder/deploy.sh"
+    echo ">>> Start push $FOLDER_NAME"
+    $DOCKER_DEPLOY $MACHINE $FOLDER_NAME
 done
