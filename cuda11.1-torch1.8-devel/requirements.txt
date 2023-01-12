@@ -8,3 +8,5 @@ pillow
 sklearn
 Click
 tqdm
+torchsummary
+tensorboard
