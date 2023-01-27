@@ -1,7 +1,7 @@
 numpy==1.18.1
 scipy==1.4.1
 opencv-python==4.6.0.66
-onnx==1.8.0
+onnx==1.13.0
 onnxruntime-gpu==1.6.0
 matplotlib
 tqdm
