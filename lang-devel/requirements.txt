@@ -1,0 +1,13 @@
+tensorflow
+opencv-python
+numpy
+scipy
+pandas
+matplotlib
+pillow
+sklearn
+Click
+tqdm
+tensorboard
+jupyter
+sacred
