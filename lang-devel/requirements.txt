@@ -1,5 +1,6 @@
-tensorflow
-opencv-python
+tensorflow==2.9.1
+tensorflow_addons==0.18.0
+opencv-contrib-python
 numpy
 scipy
 pandas
@@ -11,3 +12,4 @@ tqdm
 tensorboard
 jupyter
 sacred
+imgaug
