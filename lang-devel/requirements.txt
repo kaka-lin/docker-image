@@ -6,7 +6,7 @@ scipy
 pandas
 matplotlib
 pillow
-sklearn
+scikit-learn
 Click
 tqdm
 tensorboard
