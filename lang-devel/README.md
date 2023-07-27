@@ -3,8 +3,8 @@
 ## Environments
 
 - Ubunut: 18.04
-- CUDA: 12.0.0
-- cuDNN: 8.8.0
+- CUDA: 11.6.2
+- cuDNN: 8.4.0
 - Miniconda: latest
 - Python: 3.8.13
 - Tensorflow: 2.9.1

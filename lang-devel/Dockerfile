@@ -1,7 +1,7 @@
-FROM nvidia/cuda:12.0.0-cudnn8-devel-ubuntu18.04
+FROM nvidia/cuda:11.6.2-cudnn8-devel-ubuntu18.04
 
-ENV CUDA_VERSION 12.0
-ENV CUDNN_VERSION 8.8.0.121
+ENV CUDA_VERSION 11.6
+ENV CUDNN_VERSION 8.4.0.27
 LABEL com.nvidia.cudnn.version="${CUDNN_VERSION}"
 
 # Install basic dependencies
