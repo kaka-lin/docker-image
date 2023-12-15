@@ -1,4 +1,4 @@
-# kakalin/Lang
+# kakalin/Lang:devel
 
 ## Environments
 
@@ -9,6 +9,10 @@
 - Python: 3.8.13
 - Tensorflow: 2.9.1
 - Jupyter: latest
+- PyTorch: 2.1.1
+- Torchvision: 0.16.1
+- ONNX: 1.12.0
+- ONNX Runtime: 1.13.1
 
 ## Build & PUSH
 
