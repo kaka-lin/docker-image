@@ -13,3 +13,8 @@ tensorboard
 jupyter
 sacred
 imgaug
+torch==2.1.1
+torchvision==0.16.1
+onnx==1.12.0
+onnxruntime==1.13.1
+timm
