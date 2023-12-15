@@ -1,4 +1,4 @@
-# kakalin/Lang:devel
+# kakalin/lang:devel
 
 ## Environments
 
@@ -41,7 +41,7 @@ $ docker run -it --rm --gpus '"device=1"' kakalin/lang:devel
 
 2. Mount directory and Publish port to run `jupyter/tensorboard`
 
-```
+```bash
 $ docker run -it --rm --gpus all \
 -v <local directory>:<Container directory> \
 -p 8888:8888 \ 
