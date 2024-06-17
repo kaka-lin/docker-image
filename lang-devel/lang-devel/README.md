@@ -3,14 +3,15 @@
 ## Environments
 
 - Ubunut: 18.04
-- CUDA: 11.6.2
-- cuDNN: 8.4.0
+- CUDA: 11.8.0
+- cuDNN: 8.6.0
 - Miniconda: latest
-- Python: 3.8.13
-- Tensorflow: 2.9.1
+- Python: 3.10.14
+- Tensorflow: 2.15.1
 - Jupyter: latest
-- PyTorch: 2.1.1
-- Torchvision: 0.16.1
+- PyTorch: 2.3.1+cu118
+- Torchvision: 0.18.1+cu118
+- Torchaudio: 2.3.1+cu118
 - ONNX: 1.12.0
 - ONNX Runtime: 1.13.1
 
